@@ -37,3 +37,9 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# tmp
+/public/uploads*
+/pages/api/test.ts
+/bin
+/test

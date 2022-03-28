@@ -19,4 +19,12 @@ apiRoute.get((req, res) => {
     res.status(200).json({ data: json });
 });
 
+apiRoute.post((req:NextApiRequest,res)=> {
+    console.log(req.body);
+    const path: string = `./public/uploads_${req.body["id"]}/`;
+    const text: string = "nakanaishiaaa.txt";
+    const output = Object.assign({},text.split("a"));
+    res.status(200).json({output});
+})
+
 export default apiRoute;

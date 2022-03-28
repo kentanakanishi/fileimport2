@@ -4,7 +4,6 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { IndexPage } from './IndexPage'
 import { ResultTable } from './ResultTable'
-import { SelectBox } from './SelectBox'
 
 const Home: NextPage = () => {
   return (
@@ -20,7 +19,6 @@ const Home: NextPage = () => {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
         <IndexPage></IndexPage>
-        <SelectBox></SelectBox>
         <ResultTable></ResultTable>
         <p className={styles.description}>
           Get started by editing{' '}
